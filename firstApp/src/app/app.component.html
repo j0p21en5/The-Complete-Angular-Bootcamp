@@ -4,6 +4,13 @@
 
 
 
+<ngb-alert [dismissible]="false">
+	<strong>Warning!</strong> Better check yourself, you're not looking too good.
+</ngb-alert>
+
+
+
+
 
 <!-- Nested Loop -->
 <!-- <ul *ngFor="let user of users">
@@ -38,7 +45,7 @@
 
 
 
-<form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)" >
+<!-- <form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)" >
 
   <input type="text" ngModel name="name" placeholder="Enter user Name" >
   <br/><br/>
@@ -56,4 +63,4 @@
   <li>{{userData.name}}</li>
   <li>{{userData.email}}</li>
   <li>{{userData.password}}</li>
-</ul>
+</ul> -->
