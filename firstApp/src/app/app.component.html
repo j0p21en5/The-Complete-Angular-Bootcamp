@@ -1,0 +1,59 @@
+<!-- <app-header></app-header> -->
+<h1>{{title}}</h1>
+
+
+
+
+
+<!-- Nested Loop -->
+<!-- <ul *ngFor="let user of users">
+  <li>{{user.name}}</li>
+  <li>{{user.phone}}</li>
+
+  <ul *ngFor="let acc of user.socialAccounts">
+    <li>{{acc}}</li>
+  </ul>
+</ul>
+
+<div *ngFor="let n of num">
+  <h6>{{n}}</h6>
+
+</div> -->
+
+<!-- Style bynding -->
+
+<!-- <div [style.color]="divn" [style.backgroundColor]="bgdivn">
+  <h1>Jay</h1>
+  <h1>Kumar</h1>
+  <h1>Patel</h1>
+</div>
+
+<button (click)="changeColor()" >Change Color</button> -->
+
+<!-- <h1 [style.color]="color" [style.backgroundColor]="bgColor">{{title}}</h1>
+
+
+<button (click)="updateColor()" >Update color</button> -->
+
+
+
+
+<form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)" >
+
+  <input type="text" ngModel name="name" placeholder="Enter user Name" >
+  <br/><br/>
+  <input type="text" ngModel name="email" placeholder="Enter user Email">
+  <br/><br/>
+  <input type="text" ngModel name="password" placeholder="Enter User Password">
+  <br/><br/>
+  <button>Register</button>
+</form>
+
+
+<p>User Data Is:</p>
+<Button (click)="toggle()">Get</Button>
+<ul *ngIf="show">
+  <li>{{userData.name}}</li>
+  <li>{{userData.email}}</li>
+  <li>{{userData.password}}</li>
+</ul>
