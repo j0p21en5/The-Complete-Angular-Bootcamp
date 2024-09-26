@@ -19,6 +19,10 @@ export class AppComponent {
     console.warn(this.list);
   }
 
+  removeTask(id:number){
+    this.list= this.list.filter(item=>item.id!==id);
+  }
+
   // userData:any={}
 
   // getData(data:NgForm){
