@@ -10,19 +10,28 @@ export class AppComponent {
   title = 'firstApp';
 
 
-  userData:any={}
 
-  getData(data:NgForm){
-    console.warn(data)
-    this.userData=data
+  list:any[] = [];
 
+  addTask(item:string){
+
+    this.list.push({id:this.list.length,name:item});
+    console.warn(this.list);
   }
 
-  show=false;
+  // userData:any={}
 
-  toggle(){
-    this.show=!this.show;
-  }
+  // getData(data:NgForm){
+  //   console.warn(data)
+  //   this.userData=data
+
+  // }
+
+  // show=false;
+
+  // toggle(){
+  //   this.show=!this.show;
+  // }
 
 
 
@@ -54,5 +63,5 @@ export class AppComponent {
   // }
 
 
-  
+
 }
