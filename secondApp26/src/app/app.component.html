@@ -1,1 +1,6 @@
-<app-child></app-child>
+<h1>{{title}}</h1>
+<p>----------------------------------</p>
+
+<app-child [item]="data"></app-child>
+
+<button (click)="updateData()">Update child Component</button>
