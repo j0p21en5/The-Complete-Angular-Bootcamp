@@ -8,9 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'secondApp26';
 
-  data =10;
-  updateData(){
-    this.data=Math.floor( Math.random()*10);
+  userDetails=[
+    {name : 'jay', email:'jay@mail.com'},
+    {name : 'yash', email:'yasa@mail.com'},
+    {name : 'raja', email:'raja@mail.com'}
+  ]
 
-  }
+  // data =10;
+  // updateData(){
+  //   this.data=Math.floor( Math.random()*10);
+
+  // }
 }
