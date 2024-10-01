@@ -10,7 +10,7 @@ export class AppComponent {
 
   userDetails=[
     {name : 'jay', email:'jay@mail.com'},
-    {name : 'yash', email:'yasa@mail.com'},
+    {name : 'yash', email:'yash@mail.com'},
     {name : 'raja', email:'raja@mail.com'}
   ]
 
