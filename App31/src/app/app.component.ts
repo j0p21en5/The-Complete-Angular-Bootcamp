@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'App31';
+
+  getVal(item:any){
+    console.warn(item);
+
+  }
+
+
 }
