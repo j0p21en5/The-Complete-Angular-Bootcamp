@@ -8,10 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'App31';
 
-  getVal(item:any){
-    console.warn(item);
+  //Template refrence variable
+  // getVal(item:HTMLInputElement){
+  //   console.warn(item);
 
+  // }
+
+  user={
+    name: "Jay",
+    email: "jay@gmail.com",
   }
-
 
 }
