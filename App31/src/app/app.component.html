@@ -3,12 +3,15 @@
 <button (click)="getVal(box)">Call Function</button> -->
 
 <h1 >Pipes in Angular</h1>
+<h1>{{title |uppercase}}</h1>
 
 <h1>{{user|json}}</h1>
 
 <h1>{{20 | currency:'INR'}}</h1>
 
-<h1>{{20003.01230|number : '3.3-5'}}</h1>
+<h1>{{21543.123545|number : '2.2-3'}}</h1>
+
+<p>{{ 'hello world' | capitalizeFirst }}</p> 
 
 
 
