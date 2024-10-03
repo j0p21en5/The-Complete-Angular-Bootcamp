@@ -14,9 +14,9 @@ export class AppComponent {
 
   // }
 
-  user={
-    name: "Jay",
-    email: "jay@gmail.com",
-  }
+  // user={
+  //   name: "Jay",
+  //   email: "jay@gmail.com",
+  // }
 
 }
