@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup , Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -30,13 +30,17 @@ export class AppComponent {
 
 
   loginForm = new FormGroup({
-    user: new FormControl(''),
+    user: new FormControl('',[Validators.required]),
     password: new FormControl('')
   })
 
   loginUser()
   {
     console.warn(this.loginForm.value);
+  }
+
+  get user(){
+    return this.loginForm.get('user');
   }
 
 }
