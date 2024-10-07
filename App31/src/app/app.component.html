@@ -11,13 +11,22 @@
 
 <h1>{{21543.123545|number : '2.2-3'}}</h1> -->
 
-<h1>Cutom Pipes</h1>
+<!-- <h1>Cutom Pipes</h1>
 
-<h1>{{20 | usdInr : 72}}</h1>
-
-
+<h1>{{20 | usdInr : 72}}</h1> -->
 
 
+<h1>Template driven forms</h1>
+
+<form #loginForm="ngForm" (ngSubmit)=userLogin(loginForm.controls)>
+  <input type="text" placeholder="Enter Name" name="name" ngModel>
+  <br><br>
+  <input type="password" placeholder="Enter Password" name="password" ngModel>
+  <br><br>
+  <button>login</button>
+</form>
+
+<!-- <button (click)=userLogin(loginForm.value)>Out side login</button> -->
 
 
 

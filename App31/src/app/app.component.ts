@@ -19,4 +19,10 @@ export class AppComponent {
   //   email: "jay@gmail.com",
   // }
 
+  // ng driven forms
+
+  userLogin(item: any){
+    console.warn(item);
+  }
+
 }

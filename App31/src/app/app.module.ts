@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
     UsdInrPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
