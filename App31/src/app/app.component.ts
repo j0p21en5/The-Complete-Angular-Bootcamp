@@ -30,8 +30,8 @@ export class AppComponent {
 
 
   loginForm = new FormGroup({
-    user: new FormControl('',[Validators.required]),
-    password: new FormControl('')
+    user: new FormControl('',[Validators.required,Validators.pattern('[a-zA-z]+$')]),
+    password: new FormControl('',[Validators.required,Validators.minLength(5)])
   })
 
   loginUser()
@@ -41,6 +41,10 @@ export class AppComponent {
 
   get user(){
     return this.loginForm.get('user');
+  }
+
+  get password(){
+    return this.loginForm.get('password')
   }
 
 }
