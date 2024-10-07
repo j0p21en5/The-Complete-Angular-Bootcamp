@@ -30,7 +30,7 @@ export class AppComponent {
 
 
   loginForm = new FormGroup({
-    user: new FormControl(),
+    user: new FormControl(''),
     password: new FormControl('')
   })
 
