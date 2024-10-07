@@ -15,7 +15,7 @@
 
 <h1>{{20 | usdInr : 72}}</h1> -->
 
-
+<!--
 <h1>Template driven forms</h1>
 
 <form #loginForm="ngForm" (ngSubmit)=userLogin(loginForm.controls)>
@@ -24,9 +24,18 @@
   <input type="password" placeholder="Enter Password" name="password" ngModel>
   <br><br>
   <button>login</button>
-</form>
+</form> -->
 
 <!-- <button (click)=userLogin(loginForm.value)>Out side login</button> -->
 
+<h1>Reactive Forms</h1>
 
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+
+  <input type="text" placeholder="Enter Name"  name="name" formControlName="user">
+  <br><br>
+  <input type="password" placeholder="Enter password"  formControlName="password">
+  <br><br>
+  <button>Login</button>
+</form>
 

@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
 import { FormsModule } from "@angular/forms";
 
+import {ReactiveFormsModule} from "@angular/forms";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +14,8 @@ import { FormsModule } from "@angular/forms";
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -21,8 +22,21 @@ export class AppComponent {
 
   // ng driven forms
 
-  userLogin(item: any){
-    console.warn(item);
+  // userLogin(item: any){
+  //   console.warn(item);
+  // }
+
+  //Reactive forms
+
+
+  loginForm = new FormGroup({
+    user: new FormControl(),
+    password: new FormControl('')
+  })
+
+  loginUser()
+  {
+    console.warn(this.loginForm.value);
   }
 
 }
