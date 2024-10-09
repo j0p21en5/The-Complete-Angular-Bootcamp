@@ -13,7 +13,9 @@ export class UserComponent implements OnInit {
 
   ngOnInit(): void {
     console.warn  ("user id is : ",this.route.snapshot.paramMap.get('id'));
-    this.userId = this.route.snapshot.paramMap.get('id')
+    this.userId = this.route.snapshot.paramMap.get('id');
+
+
   }
 
 }
